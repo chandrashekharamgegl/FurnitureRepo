@@ -1,0 +1,120 @@
+#Furniture Factory
+
+#####Intro
+```
+We are going to model out a furniture factory which only makes tables.
+Unfortunately, these tables are somewhat complicated and have a number of requirements.
+
+Your solution should:
+- Use Python 3.5 or greater
+- Use Django 2.2 or greater
+- Use Django Rest Framework 3.8 or greater
+- Follow best practices for pep8, Django, and DRF
+```
+
+#####Model Requirements:
+```
+1. Tables have unique names
+2. Tables can have legs
+3. Legs cannot be shared between tables
+4. Legs can have feet
+5. Feet can be shared between legs
+6. Feet have optional width, optional length, and optional radius fields
+```
+
+#####API Requirements:
+```
+1. Tables can be listed, created, updated partially and fully, accessed via ID, and deleted
+2. Legs can be listed, created, updated partially and fully, accessed via ID, and deleted
+3. Feet can be listed, created, updated partially and fully, accessed via ID, and deleted
+```
+
+#####Admin Requirements:
+```
+1. Admins can log in and manage Tables: creating, updating, deleting
+2. Admins can log in and manage Legs: creating, updating, deleting
+3. Admins can log in and manage Feet: creating, updating, deleting
+```
+
+#####Validation Requirements:
+```
+The following validations must be ensured in all possible places:
+1. A foot with a radius must not have length or width
+2. A foot with a length must also have a width
+3. A foot with a width must also have a length 
+```
+
+#####Test Cases:
+```python
+# Please fill in the following tests:
+
+class TablesTest(TestCase):
+    def test_create(self):
+        pass
+
+    def test_list(self):
+        pass
+
+    def test_detail(self):
+        pass
+
+    def test_update(self):
+        pass
+
+    def test_update_partial(self):
+        pass
+
+    def test_delete(self):
+        pass
+
+
+class LegsTest(TestCase):
+    def test_create(self):
+        pass
+
+    def test_list(self):
+        pass
+
+    def test_detail(self):
+        pass
+
+    def test_update(self):
+        pass
+
+    def test_update_partial(self):
+        pass
+
+    def test_delete(self):
+        pass
+
+
+class FeetTest(TestCase):
+    def test_create_circle(self):
+        pass
+
+    def test_create_rectangle(self):
+        pass
+
+    def test_invalid_data(self):
+        pass
+
+    def test_list(self):
+        pass
+
+    def test_detail(self):
+        pass
+
+    def test_update(self):
+        pass
+
+    def test_update_partial(self):
+        pass
+
+    def test_delete(self):
+        pass
+```
+
+#####Submitting your solution:
+1. 
+2. 
+3. ...
